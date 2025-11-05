@@ -7,12 +7,12 @@ Built for **ethical diagnostics**, **security awareness**, and **administrative 
 
 ## 🚀 Features
 
-- 🖧 **Automatic Subnet Detection** – Finds your local IP and scans the connected network.
-- ⚡ **Fast & Accurate** – Combines ICMP, ARP, and socket checks.
-- 🔎 **Open Port Detection** – Scans common service ports (FTP, SSH, SMB, HTTP, RDP, etc.).
-- 🧩 **Console Mode** – Clean “black console” output; stays open after completion.
-- 🚫 **Risk Highlighting** – Marks known vulnerable ports with “!!”.
-- 🧾 **No Dependencies** – 100% Python standard library.
+- 🖧 **Automatic Subnet Detection**, Finds your local IP and scans the connected network.
+- ⚡ **Fast & Accurate**, Combines ICMP, ARP, and socket checks.
+- 🔎 **Open Port Detection**, Scans common service ports (FTP, SSH, SMB, HTTP, RDP, etc.).
+- 🧩 **Console Mode**, Clean “black console” output; stays open after completion.
+- 🚫 **Risk Highlighting**, Marks known vulnerable ports with “!!”.
+- 🧾 **No Dependencies**, 100% Python standard library.
 
 ---
 
