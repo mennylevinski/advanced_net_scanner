@@ -2,15 +2,14 @@
 # -*- coding: utf-8 -*-import subprocess
 
 """
+Author: Menny Levinski
+
 Light Network Scanner
 Lightweight LAN discovery & port audit tool.
 
 Run:
     python light-network-scanner.py
-Or (on Unix/macOS, after making executable):
     ./light-network-scanner.py
-
-Author: Menny Levinski
 """
 
 import io
@@ -529,3 +528,4 @@ if __name__ == "__main__":
         print(f"Logs exported → {export_path}")
 
     input("\nScan finished! Press Enter to exit...")
+
