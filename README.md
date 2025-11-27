@@ -14,7 +14,7 @@ Use responsibly and in compliance with your local governance.
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
 - 🖧 **Automatic Subnet Detection**, detects your IPv4 subnet and scans the local network.
 - ⚡ **Fast & Accurate**, Combines ICMP, ARP, and socket checks.
