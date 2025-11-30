@@ -17,7 +17,7 @@ Use responsibly and in compliance with your local governance.
 ## ✨ Features
 
 - 🖧 **Automatic Subnet Detection**, detects your IPv4 subnet and scans the local network.
-- ⚡ **Fast & Accurate**, Combines ICMP, ARP, and socket checks.
+- ⚡ **Very Fast & Accurate**, Combines ICMP, ARP, and socket checks.
 - 🔎 **Open Port Detection**, Scans common service ports (FTP, SSH, SMB, HTTP, RDP, etc.).
 - 🧩 **Console Mode**, Clean “black console” output; stays open after completion.
 - 🧾 **Logging system**, exportable log file with for more detailed output **(New)**.
