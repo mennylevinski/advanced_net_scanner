@@ -517,6 +517,9 @@ while True:
 
     if scan_mode == "1":
         choice = input("\nStart full LAN scan? (Y/N): ").strip().upper()
+        if choice not in ("Y", "N"):
+            print("Invalid choice!")
+            continue
         if choice != "Y":
             print("LAN scan cancelled.")
             input("Press Enter to exit...")
@@ -534,6 +537,7 @@ while True:
             logging.info(f"LAN scan finished in {elapsed:.1f}s")
 
     elif scan_mode == "2":
+        local_ip = _local_ip()
         print("\nCustom scan options:")
         print("Format options:")
         print(" - Single IP (example: 1.1.1.1)")
@@ -574,13 +578,16 @@ while True:
 
         try:
             for ip in target_ips:
+                # 0 Skip local IP
+                if ip == local_ip:
+                    logging.info(f"\n[SKIP] {ip} is local — skipping.")
+                    continue
                 # 1 Only scan private IPs
                 if not is_private_ip(ip):
                     logging.info(f"\n[SKIP] {ip} is not private — skipping.")
-                    continue
+                    break
                 # 2 Ping before scanning
                 if not _ping(ip, timeout_ms=400):
-                    logging.info(f"[SKIP] {ip} did not respond to ping — skipping.")
                     continue
                 # 3 Convert single IP to /32 subnet for test_print
                 single_subnet = ipaddress.ip_network(f"{ip}/32")
@@ -604,9 +611,11 @@ while True:
         finally:
             spinner.stop()
             elapsed = time.time() - start
-            if is_private_ip(ip):
+            if scan_results:  # True only if NOT empty
                 logging.info(f"Custom scan finished in {elapsed:.1f}s — found {len(scan_results)} devices.")
                 print_devices(list(scan_results.values()))
+            else:
+                print(f"Custom scan finished in {elapsed:.1f}s - No devices found.")
 
     elif scan_mode == "3":
         input("\nGoodby! Press Enter to exit...")
@@ -618,7 +627,4 @@ while True:
         with open(export_path, "w", encoding="utf-8") as f:
             f.write(log_buffer.getvalue())
         print(f"Logs exported → {export_path}")
-
-    input("\nScan finished! Press Enter to exit...")
-    break
-
+        continue
