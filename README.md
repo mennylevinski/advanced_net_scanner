@@ -1,7 +1,7 @@
-# Virtual LAN Scanner
+# Advanced Network Scanner
 
-A cross-platform, lightweight, open-source Python tool designed to discover devices on your virtual local IPv4 network.
-Built for ethical diagnostics, security awareness and administrative auditing.
+A cross-platform, lightweight, open-source Python tool designed to discover devices on your local IPv4 network / interface.
+Built for ethical diagnostics, security awareness, and administrative auditing. Suitable for both personal and organizational use.
 
 ---
 
@@ -16,7 +16,7 @@ Use responsibly and in compliance with your local governance.
 
 ## ✨ Features
 
-- **VLAN Detection Mode**, detects your IPv4 subnet and scans the local network
+- **LAN Detection Mode**, detects your IPv4 subnet and scans the local network
 - **Custom Scan Mode**, user can select to target a spesific IP address or IP ranges
 - **Fast & Accurate**, combines ICMP, ARP, and socket checks and auto discovery
 - **Port Detection**, scans common service ports (FTP, SMB, SSH, HTTP, RDP, etc)
@@ -33,10 +33,10 @@ Use responsibly and in compliance with your local governance.
 - No external packages required
 
 ### 2️ Download & Run
-- Windows: `python vlan-scanner.py`
+- Windows: `python advanced-netscanner.py`
 - Linux:<br> 
-      1. `chmod +x vlan-scanner.py` <br>
-      2. `python3 vlan-scanner.py`
+      1. `chmod +x advanced-netscanner.py` <br>
+      2. `python3 advanced-netscanner.py`
 
 ---
 ## 🖼️ Screenshot
