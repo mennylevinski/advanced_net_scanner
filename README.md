@@ -1,7 +1,7 @@
 # Advanced Network Scanner
 
 A cross-platform, lightweight, open-source Python tool designed to discover devices on your local IPv4 network.
-Built for ethical diagnostics, security awareness, and administrative auditing. Suitable for both personal and organizational use.
+Built for ethical diagnostics, security awareness, and administrative auditing. Suitable for personal and organizational use.
 
 ---
 
