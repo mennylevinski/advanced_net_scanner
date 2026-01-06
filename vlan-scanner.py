@@ -58,7 +58,7 @@ def setup_logger(level=logging.INFO, logfile: Optional[str] = None):
     logging.basicConfig(level=level, handlers=handlers)
 
 # ======= Console helper =======
-def console(title: str = "VLAN Scanner"):
+def ensure_console(title: str = "VLAN Scanner"):
     """Ensure a console is available on Windows with black background / white text."""
     if sys.platform.startswith("win"):
         try:
