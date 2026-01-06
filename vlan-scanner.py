@@ -5,7 +5,7 @@
 Author: Menny Levinski
 
 VLAN Scanner
-Lightweight LAN discovery & port audit tool.
+Lightweight VLAN discovery & port audit tool.
 
 Windows:
 python vlan-scanner.py
@@ -87,7 +87,7 @@ def ensure_console(title: str = "VLAN Scanner"):
 
 # ======= Spinner (moving dots) =======
 class Spinner:
-    """Simple  spinner/dots animation in a separate thread."""
+    """Simple console spinner/dots animation in a separate thread."""
     def __init__(self, message: str = "Running scan"):
         self.message = message
         self._stop_event = threading.Event()
@@ -115,7 +115,7 @@ COMMON_PORTS = [21, 22, 23, 67, 68, 69, 80, 53, 123, 137, 138, 161, 389, 443, 44
 # OS detection
 IS_WINDOWS = platform.system().lower().startswith("win")
 
-# Windows-specific flags to hide  windows for subprocess children
+# Windows-specific flags to hide console windows for subprocess children
 if IS_WINDOWS:
     WINDOWS_CREATE_NO_WINDOW = 0x08000000
     try:
@@ -358,7 +358,7 @@ def discover_network(subnet: Optional[ipaddress.IPv4Network] = None,
 
     return devices
 
-def _high_risky_ports(ports: Iterable[int]) -> List[str]:
+def _highlight_risky_ports(ports: Iterable[int]) -> List[str]:
     mapping = {}
     return [f"{p}({mapping.get(p,'')})" if p in mapping else str(p) for p in ports]
 
