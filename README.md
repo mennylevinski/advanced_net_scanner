@@ -33,10 +33,10 @@ Use responsibly and in compliance with your local governance.
 - No external packages required
 
 ### 2️ Download & Run
-- Windows: `python advanced-netscanner.py`
+- Windows: `python advanced_net_scanner.py`
 - Linux:<br> 
-      1. `chmod +x advanced-netscanner.py` <br>
-      2. `python3 advanced-netscanner.py`
+      1. `chmod +x advanced_net_scanner.py` <br>
+      2. `python3 advanced_net_scanner.py`
 
 ---
 ## 🖼️ Screenshot
