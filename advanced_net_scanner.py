@@ -528,7 +528,7 @@ if __name__ == "__main__":
     # --- Detect local IP and subnet ---
     logging.info(f"Advanced Network Scanner {version}")
     logging.info(f"© 2025 Menny Levinski – MIT License\n")
-    logging.info(now)
+    logging.info(f"Date:{now}")
     interface = _first_interface()
     logging.info(f"Interface: {interface or 'N/A'}")
     mac = _primary_mac()
