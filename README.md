@@ -36,14 +36,13 @@ If you trust this application, you may need to add it as an exception in your an
 
 ## ⚙️ Installation Windows EXE
 
-Download the latest Windows EXE from the Releases page.
-Double-click the executable to run.
+Download the latest [Advanced_Net_Scanner_1.0.0.zip](https://github.com/mennylevinski/advanced_net_scanner/releases/download/1.0.0/Advanced_Net_Scanner_1.0.0.zip). Unzip and double-click the executable to run.
+
+No Python installation is required when using the EXE.
 
 If Microsoft Defender SmartScreen appears:
 - Click More info
 - Click Run anyway
-
-No Python installation is required when using the EXE.
 
 ---
 
