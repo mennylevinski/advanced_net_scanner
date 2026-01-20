@@ -55,7 +55,7 @@ If Microsoft Defender SmartScreen appears:
 - No external packages required
 
 ### 2️ Download
-- Download [advanced_net_scanner.py](advanced_net_scanner.py)
+- Download [advanced_net_scanner.py](build/advanced_net_scanner.py)
 
 ### 3️⃣ Run
 - Windows: `python advanced_net_scanner.py`
