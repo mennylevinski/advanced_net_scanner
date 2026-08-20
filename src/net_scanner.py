@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Author: Menahem Levinski
+Author: Menny Levinski
 
 Requirements:
  - Python 3.0+
