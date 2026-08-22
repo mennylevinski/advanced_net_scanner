@@ -348,7 +348,7 @@ def _parse_arp_table() -> Dict[str, str]:
             for line in out.splitlines():
                 m = re.search(r"(\d+\.\d+\.\d+\.\d+)\s+([0-9a-fA-F-]{14,17})", line)
                 if m:
-                    ip, mac = m.group(1), m.group(2).replace("–", ":").lower()
+                    ip, mac = m.group(1), m.group(2).replace("-", ":").lower()
                     ip_to_mac[ip] = mac
         else:
             for line in out.splitlines():
